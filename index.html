@@ -3,8 +3,6 @@
 $mensagens_file = 'mensagens.json';
 $contador_file = 'contador.txt';
 
-var_dump($mensagens_file);
-
 // Verifica e carrega o arquivo de mensagens
 if (!file_exists($mensagens_file)) {
     die("Arquivo de mensagens não encontrado!");
@@ -73,8 +71,8 @@ file_put_contents($contador_file, $contador + 1);
 </head>
 <body>
     <div class="card">
-        <div class="mensagem"><?= htmlspecialchars($mensagem["versiculo"]) ?></div>
-        <div class="contador"> <?= htmlspecialchars($mensagem["localizacao"]) ?></div>
+        <div class="mensagem"><?php= htmlspecialchars($mensagem["versiculo"]) ?></div>
+        <div class="contador"> <?php= htmlspecialchars($mensagem["localizacao"]) ?></div>
     </div>
 </body>
 </html>

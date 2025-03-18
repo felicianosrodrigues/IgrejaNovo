@@ -71,8 +71,8 @@ file_put_contents($contador_file, $contador + 1);
 </head>
 <body>
     <div class="card">
-        <div class="mensagem"><?php= htmlspecialchars($mensagem["versiculo"]) ?></div>
-        <div class="contador"> <?php= htmlspecialchars($mensagem["localizacao"]) ?></div>
+        <div class="mensagem"><?php echo($mensagem["versiculo"]) ?></div>
+        <div class="contador"> <?php echo($mensagem["localizacao"]) ?></div>
     </div>
 </body>
 </html>
